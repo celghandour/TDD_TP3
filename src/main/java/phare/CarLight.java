@@ -9,12 +9,18 @@ public class CarLight {
         switch_pos = sm;
     }
     public void setIntensity(double li) {
-        setIntensity(li);
+    	intensity = li;
     } 
     public void setSwitch(SwitchMode sm) {
         switch_pos = sm;
     } 
     public boolean isOn() {
+    	if (intensity > 70.0 && switch_pos == SwitchMode.AUTO ) {
+    		
+    		is_on =true ;
+    		
+    	}
+    	
         return is_on;
     }
 

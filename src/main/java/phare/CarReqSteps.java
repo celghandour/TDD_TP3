@@ -1,22 +1,29 @@
 
 package phare;
 import org.jbehave.core.annotations.*;
+import org.junit.Assert;
 public class CarReqSteps{
+	CarLight c1 ;
 	
 	@Given("a car light system")
-	@Pending
+
 	public void givenACarLightSystem(){
-		 CarLight c1 = new CarLight(0.0, SwitchMode.OFF) ;
+		   c1 = new CarLight(88.0, SwitchMode.AUTO) ;
 	}
 	
 	@When("when the switch mode is ON")
-	@Pending
 	public void whenWhenTheSwitchModeIsON(){
-		 //TODO 
+		c1.setSwitch(SwitchMode.AUTO);
+		c1.step();
 	}
 	@Then("the light should be ON")
-	@Pending
 	public void thenTheLightShouldBeON(){
-		 //TODO 
+		
+		Assert.assertTrue(c1.isOn());
+		
 	}
+
+	
+	
+	
 }
