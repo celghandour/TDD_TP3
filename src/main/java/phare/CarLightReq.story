@@ -14,3 +14,8 @@ Scenario: REQ_002
 Given a car light system
 When when the switch mode is OFF
 Then the light should be OFF
+
+Scenario: REQ_003
+Given a car light system
+When when the switch mode is OFF
+Then the light should be OFF

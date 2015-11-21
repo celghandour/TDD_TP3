@@ -29,5 +29,14 @@ public class CarLight {
     // calcule is_on en fonction de intensity et switch_pos
     // FINISH ME!
     public void step() {
+    	if (intensity > 70.0 && switch_pos == SwitchMode.AUTO ) {
+    		
+    		is_on =true ;
+    		
+    	}
+    	else if (switch_pos == SwitchMode.ON){
+    		is_on=true ;
+    	}
+        
    }
 }

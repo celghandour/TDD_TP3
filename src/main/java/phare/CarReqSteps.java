@@ -10,6 +10,7 @@ public class CarReqSteps{
 	public void givenACarLightSystem(){
 		   c1 = new CarLight(0.0, SwitchMode.OFF) ;
 	}
+	
 	@When("when the switch mode is ON")
 	public void whenWhenTheSwitchModeIsON(){
 		c1.setSwitch(SwitchMode.ON);
