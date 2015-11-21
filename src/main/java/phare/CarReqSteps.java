@@ -2,19 +2,21 @@
 package phare;
 import org.jbehave.core.annotations.*;
 public class CarReqSteps{
-	@Then("the light should be ON")
+	
+	@Given("a car light system")
 	@Pending
-	public void thenTheLightShouldBeON(){
-		 //TODO 
+	public void givenACarLightSystem(){
+		 CarLight c1 = new CarLight(0.0, SwitchMode.OFF) ;
 	}
+	
 	@When("when the switch mode is ON")
 	@Pending
 	public void whenWhenTheSwitchModeIsON(){
 		 //TODO 
 	}
-	@Given("a car light system")
+	@Then("the light should be ON")
 	@Pending
-	public void givenACarLightSystem(){
+	public void thenTheLightShouldBeON(){
 		 //TODO 
 	}
 }
