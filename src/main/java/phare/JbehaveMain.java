@@ -32,7 +32,7 @@ import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import com.thoughtworks.paranamer.NullParanamer;
 
 @RunWith(JUnitReportingRunner.class)
-public class JbehaveMain  extends JUnitStories {
+public class JbehaveMain extends JUnitStories {
     private Configuration configuration; //
     public JbehaveMain() {
         super();
