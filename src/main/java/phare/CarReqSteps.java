@@ -1,3 +1,5 @@
+
+package phare;
 import org.jbehave.core.annotations.*;
 public class CarReqSteps{
 	@Then("the light should be ON")
