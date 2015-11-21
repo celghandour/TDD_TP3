@@ -20,7 +20,9 @@ public class CarLight {
     		is_on =true ;
     		
     	}
-    	
+    	else if (switch_pos == SwitchMode.ON){
+    		is_on=true ;
+    	}
         return is_on;
     }
 

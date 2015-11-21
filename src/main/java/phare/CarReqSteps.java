@@ -8,12 +8,11 @@ public class CarReqSteps{
 	@Given("a car light system")
 
 	public void givenACarLightSystem(){
-		   c1 = new CarLight(88.0, SwitchMode.AUTO) ;
+		   c1 = new CarLight(0.0, SwitchMode.OFF) ;
 	}
-	
 	@When("when the switch mode is ON")
 	public void whenWhenTheSwitchModeIsON(){
-		c1.setSwitch(SwitchMode.AUTO);
+		c1.setSwitch(SwitchMode.ON);
 		c1.step();
 	}
 	@Then("the light should be ON")
